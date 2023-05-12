@@ -15,7 +15,7 @@ class Main {
         for(int i = 0 ; i < alpha.length() ; i++){
             int x = (int)alpha.charAt(i)-96;
 
-            result += (x*(Math.pow(r,i)))%m;
+            result += ( (x%m) * (Math.pow(r,i)%m) ) % m;
         }
 
         System.out.println(result);
