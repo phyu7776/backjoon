@@ -18,6 +18,6 @@ class Main {
             r = (r*31)%m;
         }
 
-        System.out.println(result);
+        System.out.println(result%m);
     }
 }
