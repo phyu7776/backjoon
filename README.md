@@ -8,13 +8,13 @@
 참조 : https://ssdragon.tistory.com/22#%F-%-F%A-%--%--Integer-parseInt--%--%EB%-E%--%--%EB%AC%B-%EC%--%--%EC%-D%B-%EA%B-%--%-F  
 Interger.parseInt() vs Interger.valueOf()
 
-Integer.parseInt() : 
-  기본형타입(primitive Type) int형 으로 반환
-
-Integer.valueOf() :
-  Interger 타입으로 반환 (int형의 박싱 결과)
-  int x = 10;
-  Interger boxing = new Integer(x)
+Integer.parseInt() :  
+  기본형타입(primitive Type) int형 으로 반환  
+  
+Integer.valueOf() :  
+  Interger 타입으로 반환 (int형의 박싱 결과)  
+  int x = 10;  
+  Interger boxing = new Integer(x)  
 
 박싱을 하고 안하고의 차이는 성능 차이가 분명하기 떄문에 용도에 맞게 사용하자...
 https://www.acmicpc.net/problem/10989 수 정렬하기3 에서 valueOf 쓰면 시간 제한으로 무조건 탈락
