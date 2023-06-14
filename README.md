@@ -2,6 +2,7 @@
 백준/Bronze/2231. 분해합(브루트 포스) https://github.com/phyu7776/backjoon/tree/main/%EB%B0%B1%EC%A4%80/Bronze/2231.%E2%80%85%EB%B6%84%ED%95%B4%ED%95%A9  
 백준/Bronze/2798. 블랙잭(백트래킹) https://github.com/phyu7776/backjoon/tree/main/%EB%B0%B1%EC%A4%80/Bronze/2798.%E2%80%85%EB%B8%94%EB%9E%99%EC%9E%AD  
 백준/Silver/11866. 요세푸스 문제 0 (Queue) https://github.com/phyu7776/backjoon/tree/main/%EB%B0%B1%EC%A4%80/Silver/11866.%E2%80%85%EC%9A%94%EC%84%B8%ED%91%B8%EC%8A%A4%E2%80%85%EB%AC%B8%EC%A0%9C%E2%80%850%20(Queue)  
+백준/Siver/1654. 이분탐색,매개변수탐색https://github.com/phyu7776/backjoon/blob/main/%EB%B0%B1%EC%A4%80/Silver/1654.%E2%80%85%EB%9E%9C%EC%84%A0%E2%80%85%EC%9E%90%EB%A5%B4%EA%B8%B0/%EB%9E%9C%EC%84%A0%E2%80%85%EC%9E%90%EB%A5%B4%EA%B8%B0.java  
 
 
 
