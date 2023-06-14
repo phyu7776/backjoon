@@ -2,40 +2,36 @@ import java.io.*;
 import java.util.*;
 
 class Main {
-    public static void main(String[] args) throws IOException {
+    static ArrayList<Long> cable = new ArrayList<>();
+    public static void main(String[] args) throws Exception {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        StringTokenizer st = new StringTokenizer(br.readLine(), " ");
+        StringTokenizer st = new StringTokenizer(br.readLine()," ");
 
-        int K = Integer.parseInt(st.nextToken());
-        int N = Integer.parseInt(st.nextToken());
-        int[] arr = new int[K];
+        int k = Integer.parseInt(st.nextToken());
+        int n = Integer.parseInt(st.nextToken());
 
-        long max = 0;
-
-        for (int i = 0; i < K; i++) {
-            arr[i] = Integer.parseInt(br.readLine());
-            if(max < arr[i]) {
-                max = arr[i];
-            }
+        for (int i = 0; i < k; i++) {
+            cable.add(Long.parseLong(br.readLine()));
         }
-        max++;
-        long min = 0;
+
+        long maxLength = Collections.max(cable) + 1;
+        long start = 0;
         long mid = 0;
 
-        while (min < max) {
-            mid = (max + min) / 2;
+        while (start < maxLength) {
+            mid= (start + maxLength) / 2;
             long count = 0;
 
-            for (int i = 0; i < arr.length; i++) {
-                count += (arr[i] / mid);
+            for (int i = 0 ; i < cable.size(); i++) {
+                count += (cable.get(i)/mid);
             }
 
-            if (count < N) {
-                max = mid;
+            if(count < n) {
+                maxLength = mid;
             } else {
-                min = mid + 1;
+                start = mid + 1;
             }
         }
-        System.out.println(min - 1);
+        System.out.println(start - 1);
     }
 }
