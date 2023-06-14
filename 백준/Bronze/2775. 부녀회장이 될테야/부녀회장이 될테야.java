@@ -1,17 +1,16 @@
 import java.util.*;
+import java.io.*;
 
 class Main{
-    public static void main(String[] args){
-        Scanner sc = new Scanner(System.in);
-
-        int T = sc.nextInt();
+    public static void main(String[] args) throws Exception {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        int t = Integer.parseInt(br.readLine());
         StringBuffer sb = new StringBuffer();
 
-        for(int i = 0 ; i < T; i++){
-            int floor = sc.nextInt();
-            int roomNum = sc.nextInt();
-
-            sb.append(getPeople(floor, roomNum) + "\n");
+        for(int i = 0 ; i < t; i++){
+            int floor = Integer.parseInt(br.readLine());
+            int roomNum = Integer.parseInt(br.readLine());
+            sb.append(getPeople(floor, roomNum)).append("\n");
         }
 
         System.out.println(sb);
